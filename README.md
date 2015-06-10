@@ -8,8 +8,8 @@ Contact: graham.yvette@gmail.com
 -----------------------------------------------------------------------------------
 
 The following is a description of how to carry out significance tests for an
-increase in Pearson correlation of one metric/QE system over that of a baseline 
-metric/QE sytem and is described further in the following papers:
+increase in Pearson correlation of one metric (or QE system) over that of a baseline 
+metric (or baseline QE system) and is described further in the following papers:
 
 "Testing for Significance of Increased Correlation with Human Judgment", 
 Yvette Graham & Timothy Baldwin, EMNLP 2014.
