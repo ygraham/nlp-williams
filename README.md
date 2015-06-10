@@ -50,10 +50,9 @@ How to run:
 
 To run a one-sided application of Williams Test to test the significance of the 
 increase in correlation between r12 and r13 below, with sample size n, where
-    
-    - r12: Pearson correlation between human scores and metric A, 
-    - r13: Pearson correlation between human scores and metric B,
-    - r23: Pearson correlation between metric A and metric B 
+- r12: Pearson correlation between human scores and metric A, 
+- r13: Pearson correlation between human scores and metric B,
+- r23: Pearson correlation between metric A and metric B 
 
      R --no-save --args \<r12\> \<r13\> \<r23\> \<n\> < williams.R
 
