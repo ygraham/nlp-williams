@@ -23,24 +23,19 @@ metric (or baseline QE system) and is described further in the following papers:
 Requirements:
 --------------------
 
-1. "R Statistical Software"
-        To install R on the command line:
-          > sudo apt-get install r-base
+1. "R Statistical Software". To install R on the command line:
+        > sudo apt-get install r-base
 
-2. R's "psych" package
-
-To install R's "psych" package:
-Open your R command line, by typing 
+2. R's "psych" package. To install R's "psych" package, open your R console, by typing: 
         > R
 
-IF your institution uses a proxy server, you need to tell R about it BEFORE
+IF your institution uses a proxy server, you need to tell R about it BEFORE (important)
 installing any package, here's what to do: Type the following commmand into R, 
 remembering to provide your actual credentials and proxy server details:
 
         > Sys.setenv(http_proxy="http://myusername:mypasssord@myproxyserver.com:8080/")
-
-Open R command line (by typing "R") and enter the following:
-
+        
+Install the "psych" package
         > install.packages("psych")
 
 You'll be given an option of a CRAN site, when you have one selected, you
@@ -53,12 +48,12 @@ installing, type the following to quit R:
 How to run:
 --------------------
 
-Run one-sided application of Williams Test to test the significance of the increase in 
-correlation between r12 and r13 below, with sample size n:
+To run a one-sided application of Williams Test to test the significance of the 
+increase in correlation between r12 and r13 below, with sample size n, where
     
-    - r12: Human scores and Metric A, 
-    - r13: Human scores and Metric B,
-    - r23: Metric A and Metric B 
+    - r12: Pearson correlation between human scores and metric A, 
+    - r13: Pearson correlation between human scores and metric B,
+    - r23: Pearson correlation between metric A and metric B 
 
      R --no-save --args \<r12\> \<r13\> \<r23\> \<n\> < williams.R
 
