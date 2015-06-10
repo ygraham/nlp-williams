@@ -60,6 +60,23 @@ correlation between r12 and r13 below, with sample size n:
 - r13: Human scores and Metric B,
 - r23: Metric A and Metric B 
 
-    R --no-save < williams.R r12 r13 r23 n
+     R --no-save --args \<r12\> \<r13\> \<r23\> \<n\> < williams.R
 
 This returns the p-value for the test that r12 is greater than r13.
+
+For example, Williams test with the following:
+
+     R --no-save --args 0.65 0.55 0.3 50 < williams.R
+
+Will produce the following output:
+
+    Williams Test for Increase in Correlation 
+
+        r12 correlation( human, metric_a ) :  0.65 
+        r13 correlation( human, metric_b ) : 0.55 
+        r23 correlation( metric_a, metric_b) : 0.3 
+        Sample size: 50 
+
+    P-value: 0.209243482964009 
+
+Since p > 0.05, the increase in correlation is not significant. 
