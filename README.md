@@ -24,17 +24,19 @@ Requirements:
 --------------------
 
 1. "R Statistical Software". To install R on the command line:
+
         > sudo apt-get install r-base
 
 2. R's "psych" package. To install R's "psych" package, open your R console, by typing: 
+    
         > R
 
-IF your institution uses a proxy server, you need to tell R about it BEFORE (important)
+If your institution uses a proxy server, you need to tell R about it BEFORE (important)
 installing any package, here's what to do: Type the following commmand into R, 
 remembering to provide your actual credentials and proxy server details:
 
         > Sys.setenv(http_proxy="http://myusername:mypasssord@myproxyserver.com:8080/")
-        
+      
 Install the "psych" package
         > install.packages("psych")
 
