@@ -62,7 +62,7 @@ This returns the p-value for the test that r12 is greater than r13.
 
 For example, Williams test with the following:
 
-     R --no-save --args 0.65 0.55 0.3 50 < williams.R
+        R --no-save --args 0.65 0.55 0.3 50 < williams.R
 
 Will produce the following output:
 
