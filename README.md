@@ -38,6 +38,7 @@ remembering to provide your actual credentials and proxy server details:
         > Sys.setenv(http_proxy="http://myusername:mypasssord@myproxyserver.com:8080/")
       
 Install the "psych" package
+
         > install.packages("psych")
 
 You'll be given an option of a CRAN site, when you have one selected, you
